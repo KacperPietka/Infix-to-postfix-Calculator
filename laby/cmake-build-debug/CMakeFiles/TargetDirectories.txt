@@ -1,0 +1,3 @@
+/Users/kacperpietka/CLionProjects/laby/cmake-build-debug/CMakeFiles/laby.dir
+/Users/kacperpietka/CLionProjects/laby/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kacperpietka/CLionProjects/laby/cmake-build-debug/CMakeFiles/rebuild_cache.dir
