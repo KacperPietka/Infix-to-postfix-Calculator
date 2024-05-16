@@ -22,17 +22,15 @@ public:
 
     // Copy constructor
     DynamicArray(const DynamicArray& other) : data(nullptr), capacity(0), size(0) {
-        *this = other; // Utilize assignment operator for copy
+        *this = other;
     }
 
     // Assignment operator (copy)
     DynamicArray& operator=(const DynamicArray& other) {
-        if (this != &other) { // Self-assignment check
-            // Resize if necessary
+        if (this != &other) {
             if (capacity < other.size) {
                 resize(other.size);
             }
-            // Copy data
             for (int i = 0; i < other.size; ++i) {
                 data[i] = other.data[i];
             }
