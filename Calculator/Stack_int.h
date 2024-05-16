@@ -53,10 +53,9 @@ public:
     }
 
     Stack_int& operator=(const Stack_int& other) {
-        if (this == &other) // self-assignment check
+        if (this == &other) 
             return *this;
 
-        // Copy elements from other stack in reverse order
         Node_int* temp = other.head_stack;
         Stack_int tempStack;
         while (temp != nullptr) {
@@ -64,7 +63,6 @@ public:
             temp = temp->Next;
         }
 
-        // Reversing the order while pushing into this stack
         while (!tempStack.empty()) {
             push(tempStack.top());
             tempStack.pop();
